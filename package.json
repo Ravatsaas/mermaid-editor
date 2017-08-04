@@ -1,0 +1,22 @@
+{
+  "name": "mermail-client",
+  "version": "0.0.1",
+  "description": "An UML editor that generates diagrams from text",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "uml",
+    "editor"
+  ],
+  "author": "Binary Poetry LLC",
+  "license": "ISC",
+  "dependencies":{
+    "mermaid": "^7.0.3",
+    "codemirror": "^5.28.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13"
+  }
+}
