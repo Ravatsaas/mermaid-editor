@@ -1,7 +1,8 @@
 const { app, BrowserWindow, Menu, ipcMain } = require('electron')
 const path = require('path')
 const url = require('url')
-const appMenu = require( path.resolve( __dirname, './modules/appMenu.js' ) ); 
+const appMenu = require('./modules/appMenu.js' ); 
+
 
 let mainWindow;
 
