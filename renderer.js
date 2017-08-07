@@ -5,9 +5,9 @@ const d3 = require('d3')
 const file = require('./modules/file.js'); 
 
 let loadedFile = null
-let umlEditor = CodeMirror.fromTextArea(document.getElementById('umlEditor'), {lineNumbers: true})
+let umlEditor = CodeMirror.fromTextArea(document.getElementById('uml-editor'), {lineNumbers: true})
 let umlDoc = umlEditor.getDoc()
-let el = document.querySelector("#graphDiv");
+let el = document.querySelector("#graph-div");
 let errorMarkers = []
 let errorWidgets = []
 
@@ -16,7 +16,7 @@ ipc.on('export-diagram',(event, arg) => {
 })
 
 ipc.on('save-file', (event, arg) => {
-    file.save(umlDoc.getValue(), loadedFile)
+    file.save(umlDoc.getValue(), loadedFile, SetLoadedFile)
 })
 
 ipc.on('save-file-as', (event, arg) => {

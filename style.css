@@ -13,8 +13,10 @@ body {
     border-right: 1px solid #aaa;
 }
 .graph-pane {
-    width: 70%;
     position: relative;
+    width: 70%;
+    align-content: center;
+    vertical-align: middle;
 }
 .fill {
     position: absolute;
@@ -22,9 +24,6 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-}
-.center {
-    margin: auto;
 }
 .error-marking {
     background-color: #fdd;
@@ -34,6 +33,8 @@ body {
 .error-widget {
     background-color: #fdd;
     overflow: hidden;
-    /*box-shadow: 1px 1px 8px 0 #ddd inset;*/
     padding: 3px;
+}
+.CodeMirror {
+    height: auto !important;
 }
