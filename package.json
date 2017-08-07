@@ -1,10 +1,11 @@
 {
-  "name": "mermail-client",
+  "name": "mermaid-editor",
   "version": "0.0.1",
-  "description": "An UML editor that generates diagrams from text",
+  "description": "An UML live editor that generates diagrams from text",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": ".\\node_modules\\.bin\\electron-builder --win"
   },
   "keywords": [
     "uml",
@@ -12,11 +13,16 @@
   ],
   "author": "Binary Poetry LLC",
   "license": "ISC",
-  "dependencies":{
+  "build": {
+    "appId": "mermaid-editor.binarypoetry.co"
+  },
+
+  "dependencies": {
     "mermaid": "^7.0.3",
     "codemirror": "^5.28.0"
   },
   "devDependencies": {
+    "electron-builder": "^19.19.1",
     "electron-prebuilt": "^1.4.13"
   }
 }
